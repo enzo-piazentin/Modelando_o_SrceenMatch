@@ -62,6 +62,25 @@ public class horaDaPratica {
 
         Veiculo.fichatecnica();
 
+        System.out.println(pular);
+        System.out.println("Questão 5");
+        aluno cadatroAluno = new aluno();
+
+        System.out.println("Nome: ");
+        cadatroAluno.aluno = leitura.nextLine();
+
+        System.out.println("Idade: ");
+        cadatroAluno.idade = leitura.nextInt();
+
+        System.out.println("RM: ");
+        cadatroAluno.rm = leitura.nextInt();
+        tiraPulo = leitura.nextLine();
+
+        System.out.println("Sala: ");
+        cadatroAluno.sala = leitura.nextLine();
+
+        System.out.println("------------Ficha Técnica------------");
+        cadatroAluno.fichatecnica();
 
     }
 }
