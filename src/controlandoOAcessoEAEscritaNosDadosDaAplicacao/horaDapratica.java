@@ -37,6 +37,21 @@ public class horaDapratica {
         System.out.println("Idade: " + pessoa.getIdade());
         pessoa.verificaIdade();
 
+        System.out.println(pular);
+        System.out.println("Exercício 3");
+
+        produto produtoLoja = new produto();
+
+        produtoLoja.setNomeProduto("Maçã");
+        produtoLoja.setPrecoProduto(5.00);
+
+        System.out.println("Produto: " + produtoLoja.getNomeProduto());
+        System.out.println("Preço: R$" + produtoLoja.getPrecoProduto());
+        produtoLoja.aplicarDesconto(0.90);
+        System.out.println("Preço com desconto: R$" + produtoLoja.getPrecoProduto());
+
+
+
 
     }
 }
