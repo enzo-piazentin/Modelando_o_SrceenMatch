@@ -63,6 +63,16 @@ public class horaDapratica {
         System.out.println("Aluno: "+ Aluno.getNome());
         System.out.println(String.format("Média: %.2f", Aluno.retornaMedia()));
 
+        System.out.println(pular);
+        System.out.println("Exercício 5");
+
+        livro Livro = new livro();
+
+        Livro.setLivro("Achados e Perdidos");
+        Livro.setAutor("Steven King");
+
+        Livro.exibirFichaTecinica();
+
 
 
 
