@@ -50,6 +50,20 @@ public class horaDapratica {
         produtoLoja.aplicarDesconto(0.90);
         System.out.println("Preço com desconto: R$" + produtoLoja.getPrecoProduto());
 
+        System.out.println(pular);
+        System.out.println("Exercício 4");
+
+        aluno Aluno = new aluno();
+
+        Aluno.setNome("Enzo Ribeiro Domingues Piazentin");
+        Aluno.setNota(8);
+        Aluno.setNota(7.5);
+        Aluno.setNota(9.0);
+
+        System.out.println("Aluno: "+ Aluno.getNome());
+        System.out.println(String.format("Média: %.2f", Aluno.retornaMedia()));
+
+
 
 
 
