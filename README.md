@@ -1,28 +1,26 @@
-// java
-package com.santander.aof.app.resource;
 
-import static org.assertj.core.api.Assertions.*;
-import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.Mockito.*;
+    import static org.assertj.core.api.Assertions.*;
+    import static org.mockito.ArgumentMatchers.any;
+    import static org.mockito.Mockito.*;
+    
+    import com.santander.aof.app.service.SistService;
+    import com.santander.aof.model.SistPageResponseDTO;
+    import com.santander.aof.model.SistRequestDTO;
+    import com.santander.aof.model.SistResponseDTO;
+    import com.santander.aof.model.SistUpdatePatchRequestDTO;
+    import com.santander.ars.error.exceptions.ValidationException;
+    import java.util.concurrent.CompletableFuture;
+    import org.junit.jupiter.api.DisplayName;
+    import org.junit.jupiter.api.Test;
+    import org.junit.jupiter.api.extension.ExtendWith;
+    import org.mockito.ArgumentCaptor;
+    import org.mockito.InjectMocks;
+    import org.mockito.Mock;
+    import org.mockito.junit.jupiter.MockitoExtension;
+    import org.springframework.http.ResponseEntity;
 
-import com.santander.aof.app.service.SistService;
-import com.santander.aof.model.SistPageResponseDTO;
-import com.santander.aof.model.SistRequestDTO;
-import com.santander.aof.model.SistResponseDTO;
-import com.santander.aof.model.SistUpdatePatchRequestDTO;
-import com.santander.ars.error.exceptions.ValidationException;
-import java.util.concurrent.CompletableFuture;
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.ExtendWith;
-import org.mockito.ArgumentCaptor;
-import org.mockito.InjectMocks;
-import org.mockito.Mock;
-import org.mockito.junit.jupiter.MockitoExtension;
-import org.springframework.http.ResponseEntity;
-
-@ExtendWith(MockitoExtension.class)
-class SistResourceTest {
+    @ExtendWith(MockitoExtension.class)
+    class SistResourceTest {
 
     @Mock private SistService sistService;
     @InjectMocks private SistResource sistResource;
