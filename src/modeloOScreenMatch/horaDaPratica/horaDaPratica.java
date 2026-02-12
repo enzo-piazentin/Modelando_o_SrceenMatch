@@ -31,14 +31,13 @@ public class horaDaPratica {
 
         tiraPulo = leitura.nextLine();
         System.out.println("Qual album vc gosta: ");
-        relatorio.nomeDoAlbum = leitura.nextLine();
+        relatorio.nomeDoAlbum = leitura.nextLine().trim();
 
         System.out.println("Qual é o nome do Artista: ");
-        relatorio.artista = leitura.nextLine();
+        relatorio.artista = leitura.nextLine().trim();
 
         System.out.println("Ano de lançamento desse album: ");
         relatorio.anoDeLancamento = leitura.nextInt();
-        tiraPulo = leitura.nextLine();
         relatorio.pegaMedia(9);
         relatorio.pegaMedia(10);
         relatorio.pegaMedia(8.5);
@@ -52,10 +51,10 @@ public class horaDaPratica {
 
 
         System.out.println("Qual é o seu veiculo: ");
-        Veiculo.modelo = leitura.nextLine();
+        Veiculo.modelo = leitura.nextLine().trim();
 
         System.out.println("Qual cor é o seu veiculo: ");
-        Veiculo.cor = leitura.nextLine();
+        Veiculo.cor = leitura.nextLine().trim();
 
         System.out.println("Qual ano é o seu veiculo: ");
         Veiculo.anoDoCarro = leitura.nextInt();
@@ -67,7 +66,7 @@ public class horaDaPratica {
         aluno cadatroAluno = new aluno();
 
         System.out.println("Nome: ");
-        cadatroAluno.aluno = leitura.nextLine();
+        cadatroAluno.aluno = leitura.nextLine().trim();
 
         System.out.println("Idade: ");
         cadatroAluno.idade = leitura.nextInt();
@@ -77,7 +76,7 @@ public class horaDaPratica {
         tiraPulo = leitura.nextLine();
 
         System.out.println("Sala: ");
-        cadatroAluno.sala = leitura.nextLine();
+        cadatroAluno.sala = leitura.nextLine().trim();
 
         System.out.println("------------Ficha Técnica------------");
         cadatroAluno.fichatecnica();
