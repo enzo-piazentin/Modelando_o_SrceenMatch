@@ -14,5 +14,18 @@ public class horaDaPratica {
         contaCorrente.consultarSaldo();
 
         contaCorrente.cobrarTarifaMensal(contaCorrente.getSaldo());
+
+        System.out.println("--------------------------------------");
+        System.out.println(" ");
+
+        VerificandoPrimo verificador = new VerificandoPrimo();
+        verificador.verificarPrimos(17);
+
+        GerandoPrimo gerador = new GerandoPrimo();
+        int proximoNumero = gerador.gerarProximoPrimo(17);
+        System.out.println("O próximo número primo após 17 é: " + proximoNumero);
+
+        NumerosPrimos numerosPrimos = new NumerosPrimos();
+        numerosPrimos.listarPrimos(30);
     }
 }
